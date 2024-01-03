@@ -54,7 +54,21 @@ float_value = 3.14159
 complex_value = 1 + 2j
 ```
 
+**Checking the Type of a Value**
+```python
+print(type(int_value))     # <class 'int'>
+print(type(float_value))   # <class 'float'>
+print(type(complex_value)) # <class 'complex'>
+print(type("Hello"))       # <class 'str'>
+```
+
 **Exercise**: Create a variable with a complex number and print its real and imaginary parts.
+**Solution**:
+```python
+complex_value = 1 + 2j
+print("Real part:", complex_value.real)
+print("Imaginary part:", complex_value.imag)
+```
 
 ---
 
@@ -68,6 +82,10 @@ print("The value is:", 42)
 ```
 
 **Exercise**: Use `print()` to display the sentence "Learning Python is fun!".
+**Solution**:
+```python
+print("Learning Python is fun!")
+```
 
 ---
 
@@ -79,7 +97,14 @@ my_variable = "Python"
 print(my_variable)
 ```
 
+**Note:** Variable names in Python can contain letters, numbers, and underscores. They cannot start with a number. Also unlike other languages, variable declarations are not required in Python. You can simply assign a value to a variable and start using it.
+
 **Exercise**: Create a variable named `greeting` with the value "Hello" and print it.
+**Solution**:
+```python
+greeting = "Hello"
+print(greeting)
+```
 
 ---
 
@@ -93,6 +118,11 @@ formatted_string = f"{my_string} How are you?"
 ```
 
 **Exercise**: Create a string that contains your name and print it.
+**Solution**:
+```python
+my_name = "Alice"
+print(my_name)
+```
 
 ---
 
@@ -105,6 +135,11 @@ print("You entered:", user_input)
 ```
 
 **Exercise**: Write a program that asks the user for their name and greets them.
+**Solution**:
+```python
+name = input("Enter your name: ")
+print(f"Hello, {name}!")
+```
 
 ---
 
@@ -117,6 +152,10 @@ is_false = False
 ```
 
 **Exercise**: Create a boolean variable `is_sunny` and set it to `True` or `False` based on the weather in your area.
+**Solution**:
+```python
+is_sunny = True
+```
 
 ---
 
@@ -130,6 +169,11 @@ result = a < b
 ```
 
 **Exercise**: Write a boolean expression to check if a number stored in a variable `x` is greater than 100.
+**Solution**:
+```python
+x = 50
+print(x > 100)
+```
 
 ---
 
@@ -143,7 +187,27 @@ if a < b:
     print("a is less than b")
 ```
 
+**Note:** The code inside the `if` statement must be indented. 
+
 **Exercise**: Write an `if` statement to print "Welcome!" if a variable `age` is greater than 18.
+**Solution**:
+```python
+age = 20
+if age > 18:
+    print("Welcome!")
+```
+
+**Exercise**: Write a program that asks the user for their age and prints "Welcome!" if they are over 18, "You are under 18!" if they are under 18, and "You are 18!" if they are exactly 18.
+**Solution**:
+```python
+age = int(input("Enter your age: "))
+if age > 18:
+    print("Welcome!")
+elif age < 18:
+    print("You are under 18!")
+else:
+    print("You are 18!")
+```
 
 ---
 
@@ -158,6 +222,13 @@ while count < 5:
 ```
 
 **Exercise**: Use a `while` loop to print numbers from 1 to 10.
+**Solution**:
+```python
+count = 1
+while count <= 10:
+    print(count)
+    count += 1
+```
 
 ---
 
@@ -172,6 +243,11 @@ for i in range(5):
 ```
 
 **Exercise**: Write a `for` loop to print each character in the string "Python".
+**Solution**:
+```python
+for c in "Python":
+    print(c)
+```
 
 ---
 
@@ -189,7 +265,23 @@ for i in range(10):
     print(i)
 ```
 
+**Note:** 
+- The `pass` statement is used as a placeholder for code that will be added later. It does nothing.
+- The `continue` statement skips the rest of the code inside the loop for the current iteration and moves on to the next iteration.
+- The `break` statement exits the loop immediately.
+
 **Exercise**: Modify the above loop to skip numbers divisible by 3.
+**Solution**:
+```python
+for i in range(10):
+    if i % 3 == 0:
+        continue
+    elif i == 8:
+        break
+    else:
+        pass
+    print(i)
+```
 
 ---
 
@@ -220,6 +312,13 @@ print(random.randint(1, 10))
 fruits = ["apple", "banana", "cherry"]
 print(random.choice(fruits))
 ```
+
+**Some more useful modules:**
+- `datetime`: For working with dates and times
+- `os`: For interacting with the operating system
+- `sys`: For interacting with the Python interpreter
+- `json`: For working with JSON data
+- `csv`: For working with CSV files
 
 **Exercise**: Use a function from the `datetime` module to print the current date.
 
