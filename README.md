@@ -443,7 +443,3 @@ def is_palindrome(num):
 print(is_palindrome(121))  # True
 print(is_palindrome(123))  # False
 ```
-
----
-
-These questions and solutions cover a range of basic concepts in Python and should provide a good practice for beginners. You can include these in your GitHub repository as additional learning material.
