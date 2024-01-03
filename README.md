@@ -309,8 +309,6 @@ with open("example_read.txt", "r") as file:
 
 **Exercise**: Write a program that reads a file named `data.txt` and prints its contents.
 
-Certainly! I'll provide a set of practice questions along with their solutions. These will encompass various topics like control flow, loops, functions, lists, tuples, and pattern printing, which are commonly used in Python programming.
-
 ---
 
 ## General Practice Questions and Solutions
