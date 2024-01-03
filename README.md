@@ -38,6 +38,12 @@ float_example = 3.14
 
 **Exercise**: Assign the value `10` to a variable named `my_number` and print it.
 
+**Solution**:
+```python
+my_number = 10
+print(my_number)
+```
+
 ---
 
 ## Numeric Values and Types in Python
@@ -63,6 +69,7 @@ print(type("Hello"))       # <class 'str'>
 ```
 
 **Exercise**: Create a variable with a complex number and print its real and imaginary parts.
+
 **Solution**:
 ```python
 complex_value = 1 + 2j
@@ -82,6 +89,7 @@ print("The value is:", 42)
 ```
 
 **Exercise**: Use `print()` to display the sentence "Learning Python is fun!".
+
 **Solution**:
 ```python
 print("Learning Python is fun!")
@@ -100,6 +108,7 @@ print(my_variable)
 **Note:** Variable names in Python can contain letters, numbers, and underscores. They cannot start with a number. Also unlike other languages, variable declarations are not required in Python. You can simply assign a value to a variable and start using it.
 
 **Exercise**: Create a variable named `greeting` with the value "Hello" and print it.
+
 **Solution**:
 ```python
 greeting = "Hello"
@@ -118,6 +127,7 @@ formatted_string = f"{my_string} How are you?"
 ```
 
 **Exercise**: Create a string that contains your name and print it.
+
 **Solution**:
 ```python
 my_name = "Alice"
@@ -135,6 +145,7 @@ print("You entered:", user_input)
 ```
 
 **Exercise**: Write a program that asks the user for their name and greets them.
+
 **Solution**:
 ```python
 name = input("Enter your name: ")
@@ -152,6 +163,7 @@ is_false = False
 ```
 
 **Exercise**: Create a boolean variable `is_sunny` and set it to `True` or `False` based on the weather in your area.
+
 **Solution**:
 ```python
 is_sunny = True
@@ -169,6 +181,7 @@ result = a < b
 ```
 
 **Exercise**: Write a boolean expression to check if a number stored in a variable `x` is greater than 100.
+
 **Solution**:
 ```python
 x = 50
@@ -190,6 +203,7 @@ if a < b:
 **Note:** The code inside the `if` statement must be indented. 
 
 **Exercise**: Write an `if` statement to print "Welcome!" if a variable `age` is greater than 18.
+
 **Solution**:
 ```python
 age = 20
@@ -198,6 +212,7 @@ if age > 18:
 ```
 
 **Exercise**: Write a program that asks the user for their age and prints "Welcome!" if they are over 18, "You are under 18!" if they are under 18, and "You are 18!" if they are exactly 18.
+
 **Solution**:
 ```python
 age = int(input("Enter your age: "))
@@ -222,6 +237,7 @@ while count < 5:
 ```
 
 **Exercise**: Use a `while` loop to print numbers from 1 to 10.
+
 **Solution**:
 ```python
 count = 1
@@ -243,6 +259,7 @@ for i in range(5):
 ```
 
 **Exercise**: Write a `for` loop to print each character in the string "Python".
+
 **Solution**:
 ```python
 for c in "Python":
@@ -271,6 +288,7 @@ for i in range(10):
 - The `break` statement exits the loop immediately.
 
 **Exercise**: Modify the above loop to skip numbers divisible by 3.
+
 **Solution**:
 ```python
 for i in range(10):
@@ -322,6 +340,13 @@ print(random.choice(fruits))
 
 **Exercise**: Use a function from the `datetime` module to print the current date.
 
+**Solution**:
+```python
+import datetime
+date = datetime.date.today()
+print(date)
+```
+
 ---
 
 ## Defining Functions
@@ -346,6 +371,14 @@ print(greet("Bob", "Good morning"))
 ```
 
 **Exercise**: Write a function `multiply` that takes two parameters and returns their product.
+
+**Solution**:
+```python
+def multiply(a, b):
+    return a * b
+
+print(multiply(5, 10))
+```
 
 ---
 
@@ -381,6 +414,13 @@ for color in colors:
 
 **Exercise**: Create a tuple with three different animals and use a `for` loop to print each animal.
 
+**Solution**:
+```python
+animals = ("cat", "dog", "rabbit")
+for animal in animals:
+    print(animal)
+```
+
 ---
 
 ## Files
@@ -407,6 +447,13 @@ with open("example_read.txt", "r") as file:
 ```
 
 **Exercise**: Write a program that reads a file named `data.txt` and prints its contents.
+
+**Solution**:
+```python
+with open("data.txt", "r") as file:
+    for line in file:
+        print(line.strip())
+```
 
 ---
 
